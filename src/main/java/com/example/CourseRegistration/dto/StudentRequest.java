@@ -21,7 +21,7 @@ public class StudentRequest {
     private String email;
 
     @NotBlank(message = "Mobile number is required")
-    @Pattern(regexp = "^[6-9][0-9] {9}$",
+    @Pattern(regexp = "^[6-9][0-9]{9}$",
     message = "Enter a valid 10 digit Indian number")
     private String mobile;
 }
